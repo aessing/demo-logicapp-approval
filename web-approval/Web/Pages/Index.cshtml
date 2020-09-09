@@ -1,0 +1,63 @@
+﻿@page
+@addTagHelper*, Microsoft.AspNetCore.Mvc.TagHelpers
+@model IndexModel
+@{
+    ViewData["Title"] = "Permission Request";
+}
+
+<div class="main">
+    <div class="container">
+        <div class="signup-content">
+            <div class="signup-img">
+                <img src="~/images/form-img.jpg" alt="">
+                <div class="signup-img-content">
+                    <h2>GET ACCESS DEMO</h2>
+                    <p>Request your permissions!</p>
+                </div>
+            </div>
+            <div class="signup-form">
+                <form method="POST" class="register-form" id="register-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <div class="form-input">
+                                <label for="first_name" class="required">First name</label>
+                                <input type="text" name="firstname" id="firstname" asp-for="firstname" tabindex="1" />
+                                <span class="form-validation" asp-validation-for="firstname"></span>
+                            </div>
+                            <div class="form-input">
+                                <label for="email" class="required">Email</label>
+                                <input type="email" name="mail" id="mail" asp-for="mail" tabindex="3" />
+                                <span class="form-validation" asp-validation-for="mail"></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-input">
+                                <label for="last_name" class="required">Last name</label>
+                                <input type="text" name="name" id="name" asp-for="name" tabindex="2" />
+                                <span class="form-validation" asp-validation-for="name"></span>
+                            </div>
+                            <div class="form-input">
+                                <label for="company" class="required">Cost Center Code</label>
+                                <input type="number" name="costcenter" id="costcenter" asp-for="costcenter" tabindex="4" />
+                                <span class="form-validation" asp-validation-for="costcenter"></span>
+                            </div>
+                        </div>
+                        <div class="form-group-wide">
+                            <div class="form-input">
+                                <label for="reason" class="required">Reason for request</label>
+                                <input type="text" name="reason" id="reason" asp-for="reason" tabindex="5" />
+                                <span class="form-validation" asp-validation-for="reason"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-submit">
+                        <input type="submit" value="Submit" class="submit" id="submit" name="submit" />
+                    </div>
+                    <div class="form-return">
+                       @Model.submitResponse
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

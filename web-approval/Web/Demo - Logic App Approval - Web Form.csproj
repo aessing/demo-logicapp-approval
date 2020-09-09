@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>DemoLogicAppApprovalWeb</RootNamespace>
+    <UserSecretsId>91ea1ecd-9319-455f-92b3-e9f8f94486f2</UserSecretsId>
+  </PropertyGroup>
+
+</Project>
