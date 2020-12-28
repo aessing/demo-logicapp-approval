@@ -6,16 +6,16 @@ This repository contains a demo / example of a approval process backed by a Logi
 
 The idea is to have somebody request permissions, for example via a formular hosted in an Azure website, which will trigger a Logic App, which will start the approval process. This demo / example send the request via mail to an approver and write the request to after approval (or after the request was rejected) to a table in a Azure SQL Database and into an Azure Data Lake Store Gen 2 as a JSON.
 
-![Architecture diagram of the sample approval process](.img/architecture.png)
+![Architecture diagram of the sample approval process](.media/architecture.png)
 
 
 ## Screenshots
 
 ### The web form
-![Screenshot of the web formular to request permission](.img/web-form.png)
+![Screenshot of the web formular to request permission](.media/web-form.png)
 
 ### The Logic App flow
-![Screenshot of the approval flow build in Azure Logic App](.img/logic-app-flow.png)
+![Screenshot of the approval flow build in Azure Logic App](.media/logic-app-flow.png)
 
 
 ---

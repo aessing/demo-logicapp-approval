@@ -7,4 +7,4 @@ You can also use this Deploy to Azure Button.
 
 >:exclamation: PLEASE CHECK THE CONNECTIONS IN THE LOGIC APP AFTER DEPLOYMENT IF THEY ARE CORRECT :exclamation:
 
-![Screenshot of the approval flow build in Azure Logic App](../../.img/logic-app-flow.png)
+![Screenshot of the approval flow build in Azure Logic App](../../.media/logic-app-flow.png)
